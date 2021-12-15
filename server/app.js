@@ -6,7 +6,7 @@ const db = require("./knex");
 app.use(express.json());
 
 app.get("/api/string", async (req, res) => {
-  const notes = await db().select().table("string");
+  const notes = await db("string").select();
   res.status(200).send(notes);
   // console.log("aaaaaaaa");
   // res.send("Hello")

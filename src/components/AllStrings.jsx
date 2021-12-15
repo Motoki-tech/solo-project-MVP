@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function AllPhotos(props) {
   const getStringList = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/string");
-      const jsonData = await response.json();
+      const response = await axios.get("/api/string");
+      console.log(response);
     } catch (err) {
       console.error(err.message);
     }
@@ -12,7 +13,7 @@ export default function AllPhotos(props) {
 
   useEffect(() => {
     getStringList();
-  });
+  }, []);
 
   return (
     <table className='table'>
