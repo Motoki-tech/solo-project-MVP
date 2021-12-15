@@ -6,14 +6,19 @@ import AllString from "./components/AllStrings";
 
 function App() {
   const [cullentView, setCurrentView] = useState("All");
-  const [selectString, setCheckString] = useState();
+  const [checkString, setCheckString] = useState();
+
+  let selectArea;
 
   return (
     <div className='App'>
       <h1 className='Title'>Let's find your favorite Strings!</h1>
       <img src='https://www.shimamura.co.jp/shop/nagoya/wp-content/uploads/sites/50/2018/02/20180227-20170928-image9-1.jpeg' />
       <div>
-        <Checkbox />
+        <Checkbox
+          setCheckString={setCheckString}
+          setCurrentView={setCurrentView}
+        />
         <AllString />
       </div>
     </div>
