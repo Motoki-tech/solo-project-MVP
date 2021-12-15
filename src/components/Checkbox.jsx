@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Checkbox(props) {
   return (
-    <div>
+    <div id='menu-box'>
       <label className='checkbox'>
         Elixir
         <input type='checkbox' id='checkbox' onClick={() => {}} />
