@@ -14,3 +14,11 @@
   box-shadow: rgb(0 0 0 / 30%) 0px 0px 4px 2px;
   margin: 20px 150px;
 }
+
+.table {
+  padding: 30px 30px;
+  min-height: 5%;
+  min-width: 150px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 4px 2px;
+  margin: 20px 150px;
+}
