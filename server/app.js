@@ -8,8 +8,6 @@ app.use(express.json());
 app.get("/api/string", async (req, res) => {
   const notes = await db("string").select();
   res.status(200).send(notes);
-  // console.log("aaaaaaaa");
-  // res.send("Hello")
 });
 
 // const port = 4000 || process.env.PORT;
