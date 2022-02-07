@@ -10,9 +10,4 @@ app.get("/api/string", async (req, res) => {
   res.status(200).send(notes);
 });
 
-// const port = 4000 || process.env.PORT;
-// app.listen(port, () => {
-//   console.log(`🎉 Server running at http://localhost:${port} !`);
-// });
-
 module.exports = app;
