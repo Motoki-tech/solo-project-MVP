@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-// const db = require("./knex");
+const db = require("./knex");
 
 app.use(express.json());
 
